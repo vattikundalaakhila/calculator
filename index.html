@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <main class="calculator" role="application" aria-label="Glassmorphism Calculator">
+        <header class="calculator__header">
+            <h1 class="calculator__title">
+                <i class="fas fa-calculator calculator__title-icon" aria-hidden="true"></i>
+                <span>GlassCalc</span>
+            </h1>
+            <div class="calculator__theme-toggle" role="button" aria-label="Toggle theme" tabindex="0">
+                <i class="fas fa-palette calculator__theme-icon" aria-hidden="true"></i>
+                <span>Theme</span>
+            </div>
+        </header>
+
+        <section class="calculator__display" aria-live="polite" aria-atomic="true">
+            <!-- <div class="calculator__display-expression" id="expression">0</div> -->
+            <div class="calculator__display-value" id="display">0</div>
+        </section>
+
+        <section class="calculator__controls" id="calculator">
+            <button class="calculator__button calculator__button--clear" data-action="clear" aria-label="Clear all">
+                <span class="calculator__button-text">C</span>
+            </button>
+            <button class="calculator__button calculator__button--operator" data-action="backspace"
+                aria-label="Backspace">
+                <i class="fas fa-backspace calculator__button-icon" aria-hidden="true"></i>
+            </button>
+            <button class="calculator__button calculator__button--operator" data-action="divide" aria-label="Divide">
+                <span class="calculator__button-text">÷</span>
+            </button>
+            <button class="calculator__button calculator__button--operator" data-action="multiply"
+                aria-label="Multiply">
+                <span class="calculator__button-text">×</span>
+            </button>
+
+            <button class="calculator__button" data-number="7" aria-label="Number 7">
+                <span class="calculator__button-text">7</span>
+            </button>
+            <button class="calculator__button" data-number="8" aria-label="Number 8">
+                <span class="calculator__button-text">8</span>
+            </button>
+            <button class="calculator__button" data-number="9" aria-label="Number 9">
+                <span class="calculator__button-text">9</span>
+            </button>
+            <button class="calculator__button calculator__button--operator" data-action="subtract"
+                aria-label="Subtract">
+                <span class="calculator__button-text">-</span>
+            </button>
+
+            <button class="calculator__button" data-number="4" aria-label="Number 4">
+                <span class="calculator__button-text">4</span>
+            </button>
+            <button class="calculator__button" data-number="5" aria-label="Number 5">
+                <span class="calculator__button-text">5</span>
+            </button>
+            <button class="calculator__button" data-number="6" aria-label="Number 6">
+                <span class="calculator__button-text">6</span>
+            </button>
+            <button class="calculator__button calculator__button--operator" data-action="add" aria-label="Add">
+                <span class="calculator__button-text">+</span>
+            </button>
+
+            <button class="calculator__button" data-number="1" aria-label="Number 1">
+                <span class="calculator__button-text">1</span>
+            </button>
+            <button class="calculator__button" data-number="2" aria-label="Number 2">
+                <span class="calculator__button-text">2</span>
+            </button>
+            <button class="calculator__button" data-number="3" aria-label="Number 3">
+                <span class="calculator__button-text">3</span>
+            </button>
+            <button class="calculator__button calculator__button--operator" data-action="decimal"
+                aria-label="Decimal point">
+                <span class="calculator__button-text">.</span>
+            </button>
+
+            <button class="calculator__button calculator__button--zero" data-number="0" aria-label="Number 0">
+                <span class="calculator__button-text">0</span>
+            </button>
+            <button class="calculator__button calculator__button--equals" data-action="equals" aria-label="Equals">
+                <span class="calculator__button-text">=</span>
+            </button>
+        </section>
+
+        <footer class="calculator__footer">
+            <div class="calculator__powered">
+                <i class="fas fa-magic calculator__powered-icon" aria-hidden="true"></i>
+                <span>Powered by CSS Magic</span>
+            </div>
+            <div class="calculator__copyright">© 2025 GlassCalc</div>
+        </footer>
+    </main>
+</body>
+</html>
