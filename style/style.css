@@ -54,11 +54,11 @@
 
         .calculator {
             width: 100%;
-            max-width: 360px;
+            max-width: 340px;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: var(--blur);
             border-radius: 24px;
-            padding: 18px;
+            padding: 16px;
             box-shadow: var(--shadow);
             border: var(--border);
             animation: slideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -97,14 +97,7 @@
             }
         }
 
-        .calculator__header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-            padding-bottom: 16px;
-            border-bottom: var(--border);
-        }
+       
 
         .calculator__title {
             font-size: 1.5rem;
@@ -135,13 +128,13 @@
         .calculator__display {
             background: rgba(0, 0, 0, 0.2);
             border-radius: 16px;
-            padding: 16px 16px;
-            margin-bottom: 16px;
+            padding: 14px 14px;
+            margin-bottom: 14px;
             text-align: right;
             border: var(--border);
             position: relative;
             overflow: hidden;
-            min-height: 90px;
+            min-height: 80px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -177,7 +170,7 @@
         }
 
         .calculator__display-value {
-            font-size: 2.4rem;
+            font-size: 2.8rem;
             font-weight: 300;
             letter-spacing: 1px;
             transition: all 0.3s ease;
@@ -186,7 +179,7 @@
         .calculator__controls {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
+            gap: 16px;
         }
 
         .calculator__button {
@@ -195,7 +188,7 @@
             border-radius: 16px;
             background: var(--primary-color);
             color: var(--text-color);
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             cursor: pointer;
             backdrop-filter: var(--blur);
             border: var(--border);
@@ -272,17 +265,7 @@
             font-size: 1.2rem;
         }
 
-        .calculator__footer {
-            margin-top: 12px;
-            padding-top: 10px;
-            border-top: var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.8rem;
-            opacity: 0.7;
-        }
-
+        
         .calculator__theme-toggle {
             display: flex;
             align-items: center;
