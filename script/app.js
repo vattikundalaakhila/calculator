@@ -3,14 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let userInput = "";
   buttons.forEach((btn) => {
     btn.addEventListener("click", (event) => {
-      console.log(event);
-      let number = parseFloat(
-        event.currentTarget.dataset.number
-      );
-      userInput += number;
-      addInput();
-    });
+       let number = event.currentTarget.dataset.number;
+
+    if (userInput === "0") {
+      userInput = number;   // replace 0
+    } else {
+      userInput += number;  // append
+    }
+
+    addInput();
   });
+});
   let operands = document.querySelectorAll("[data-action]");
 
   operands.forEach((btn) => {
@@ -34,7 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
           userInput = "0";
           break;
         case "backspace":
-          userInput = "";
+          userInput = userInput.slice(0, -1);
+          if (userInput === "") {
+            userInput = "0";
+          }
           break;
         case "decimal":
           userInput += ".";
